@@ -4,6 +4,14 @@ import { PrismaClient } from '@prisma/client'
 const app = express()
 app.use(express.json())
 
+const cors = require("cors")
+const corsOptions = {
+  origin:'http://localhost:8080', 
+  optionSuccessStatus:200,
+}
+
+app.use(cors(corsOptions)) 
+
 const prisma = new PrismaClient()
 
 app.get('/sellers', async (req, res) => {
