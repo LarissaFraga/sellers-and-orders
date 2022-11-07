@@ -8,6 +8,11 @@
 ```bash
 npm install
 ```
+### Access with database
+
+```bash
+npx prisma db pull
+```
 
 ### Populate the database
 
