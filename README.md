@@ -8,6 +8,11 @@
 ```bash
 npm install
 ```
+### Create .env file inside prisma folder
+
+```bash
+DATABASE_URL="file:./dev.db"
+```
 ### Access with database
 
 ```bash
