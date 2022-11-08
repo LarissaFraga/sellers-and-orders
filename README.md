@@ -13,16 +13,10 @@ npm install
 ```bash
 DATABASE_URL="file:./dev.db"
 ```
-### Access with database
+### Configurate database
 
 ```bash
-npx prisma db pull
-```
-
-### Populate the database
-
-```bash
-npx prisma db seed
+npx prisma migrate dev
 ```
 
 ### Open prisma interface
